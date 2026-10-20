@@ -1,14 +1,22 @@
 # Catalogue of development abstractions
 
-This catalogue introduces development abstractions for **abstraction-augmented agentic development (A³D)**: helping people understand and steer software development carried out with coding agents.
+This catalogue introduces development abstractions for **abstraction-augmented agentic development (A³D)**: 
+a method to help developers understand and steer software projects carried out with coding agents.
 
-A **development abstraction** is a structured, task-oriented representation that selectively exposes relevant aspects of a software project or its development process. It may be visual and interactive. A **development model** supplies the information used by one or more abstractions, with traces to supporting evidence. Separating models from abstractions allows extraction to be reused across different views.
+A **development abstraction** is a structured, task-oriented representation that selectively exposes relevant aspects 
+of a software project or its development process. It may be visual and interactive. A **development model** supplies 
+the information used by one or more abstractions, with traces to supporting evidence. Separating models from abstractions 
+allows extraction to be reused across different views.
 
-The initial catalogue expands the ten example abstractions in Table I and the seven development models described in the accompanying article, *Abstraction-Augmented Agentic Development*. Entries describe concepts and illustrative interactions; they do not claim that all capabilities have been implemented or empirically validated. The catalogue is independent of a particular coding agent, development methodology, or plugin format.
+This repository contains an evolving catalogue of abstractions and development models. Entries describe 
+concepts and illustrative interactions; they do not claim that all capabilities have been implemented in a 
+supporting tool (like specular) or empirically validated. The catalogue is independent of a particular 
+coding agent, development methodology, or plugin format. However, the plan is to provide support for this
+catalogue in specular's abstraction marketplace (see XXX).
 
 ## Conceptual model
 
-The following Markdown-native adaptation of Figure 1 captures its central concepts and relationships. It simplifies the diagram layout and association multiplicities.
+The following Figure captures the main elements of abstractions and models.
 
 ```mermaid
 classDiagram
@@ -56,15 +64,24 @@ classDiagram
     DevelopmentArtifact <|-- AgentTrajectory
 ```
 
-An abstraction requires one or more development models; each model can serve multiple abstractions. Extractors locate relevant information in development artefacts and populate models. Traces connect model information to its supporting evidence. Extractors may use configured algorithms, language models, or a combination of both.
+An abstraction requires one or more development models; each model can serve multiple abstractions. 
+Extractors locate relevant information in development artefacts and populate models. Traces connect 
+model information to its supporting evidence. Extractors may use configured algorithms, language models, 
+or a combination of both.
 
-An abstraction has a project, process, or combined subject and one or more purposes: **descriptive** (present selected information), **analytical** (derive findings), or **constructive** (express intended changes). Read-only abstractions can still support interaction and navigation. Editable abstractions delegate changes to models; where supported, project injectors propagate those changes to the corresponding artefacts.
+An abstraction has a project, process, or combined subject and one or more purposes: 
+**descriptive** (present selected information), **analytical** (derive findings), or 
+**constructive** (express intended changes). Read-only abstractions can still support interaction 
+and navigation. Editable abstractions delegate changes to models; where supported, project injectors 
+propagate those changes to the corresponding artefacts.
 
-For example, an extractor identifies requirements and tasks in Markdown specifications and records their relationships in a project model. A project map displays those relationships as a graph, while project cards display the same items as a dashboard. Both navigate back to the supporting sources.
+For example, an extractor identifies requirements and tasks in Markdown specifications and records 
+their relationships in a project model. A project map displays those relationships as a graph, 
+while project cards display the same items as a dashboard. Both navigate back to the supporting sources.
 
 ## Development abstractions
 
-The following table provides the initial catalogue. Model dependencies follow Table I; implementations can use additional models for navigation or enrichment.
+The following table provides the current catalogue. 
 
 | Abstraction | Developer question | Subject | Purpose | Required models |
 | --- | --- | --- | --- | --- |
@@ -95,8 +112,22 @@ Each entry describes the developer question, representation and interaction, inf
 
 Each model entry describes its core information, sources and extraction, evidence and refresh, relationships to other models, consuming abstractions, and limitations. These descriptions are conceptual and do not prescribe a formal schema or persistence format.
 
-## Reading and extending the catalogue
+## Contributing to the catalogue
 
-Start with the developer question closest to your task, then follow the required-model links to understand its information needs. The catalogue is representative and open to extension. New abstractions should identify a concrete developer question, explain what they expose or allow a person to change, and state how their information traces to evidence. New models should explain what information they contribute and how it can be reused.
+### How to read?
 
-A catalogue entry describes a concept; an extractor or plugin is an implementation of that concept. Distinguish documented facts from inferred findings, and identify missing or stale evidence rather than presenting it as certainty.
+Start with the developer question closest to your task, then follow the required-model links to understand its 
+information needs. 
+
+### How to extend?
+
+The catalogue is representative and open to extension. New abstractions should identify a concrete 
+developer question, explain what they expose or allow a person to change, and state how their 
+information traces to evidence. New models should explain what information they contribute and how 
+it can be reused.
+
+If you want to add a new abstraction or model, send a PR for us to review.
+
+The plan is to provide support for this catalogue in specular's abstraction marketplace (see XXX).
+
+
