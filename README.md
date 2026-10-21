@@ -12,7 +12,7 @@ This repository contains an evolving catalogue of abstractions and development m
 concepts and illustrative interactions; they do not claim that all capabilities have been implemented in a 
 supporting tool (like specular) or empirically validated. The catalogue is independent of a particular 
 coding agent, development methodology, or plugin format. However, the plan is to provide support for this
-catalogue in specular's abstraction marketplace (see XXX).
+catalogue in [specular's abstraction marketplace](https://github.com/specular-ai/specular-IDE).
 
 ## Conceptual model
 
@@ -128,6 +128,6 @@ it can be reused.
 
 If you want to add a new abstraction or model, send a PR for us to review.
 
-The plan is to provide support for this catalogue in specular's abstraction marketplace (see XXX).
+The plan is to provide support for this catalogue in [specular's abstraction marketplace](https://github.com/specular-ai/specular-IDE).
 
 
