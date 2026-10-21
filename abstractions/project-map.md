@@ -17,8 +17,8 @@ Which tasks implement requirement X? Which design decisions address it?
 
 ## Representation and interaction
 
-The figures below show the Harbour example project, whose requirements, design decisions and delivery tasks are 
-written in three Markdown files.
+The figures below show the Harbor example project, whose requirements, design decisions and delivery tasks are 
+written in four Markdown files.
 
 The focused view centres the graph on one ID and shows the IDs connected to it, as in the figure below. 
 For example, REQ-001 is referenced by three design decisions (DD-001 to DD-003), which are in turn referenced by 
@@ -34,7 +34,7 @@ of which opens the source document.
 Additionally, an overview shows the entire graph: IDs are grouped by the document that defines them, and edges go 
 from references to definitions.
 
-![Project map overview with the IDs of the Harbour project grouped by file](../figures/project_map_overview.png)
+![Project map overview with the IDs of the Harbor project grouped by file](../figures/project_map_overview.png)
 
 ## Information and evidence
 
